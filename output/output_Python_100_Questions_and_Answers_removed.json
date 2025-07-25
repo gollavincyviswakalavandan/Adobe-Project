@@ -1,0 +1,360 @@
+{
+  "metadata": {
+    "persona": "A data analyst with 5 years of experience in business intelligence.",
+    "job_to_be_done": "Looking for insights related to customer churn analysis.",
+    "processed_at": "2025-07-25T01:56:22.589777Z"
+  },
+  "extracted_sections": [
+    {
+      "page": 5,
+      "text": "Intr oduction\nIf you have acquired this book, you want to start programming and be\nlogically challen ged as soon as possible, without wanting to read a sermon\non the mount. But it is important to highlight a few things before we begin.\nEven though many exercises may be considered easy, if you are new to\nthis programming journey , it is important for you to first try to solve the\nproblem on your own before looking at the solution. There is more than one\npossible solution  to the same problem, and you need to think and develop\nyour own solution. Then, you can compare it with the proposed one in the\nbook, identify the strengths of each, and try to learn a little more.\nIf the exercise is too difficult and you can't solve it, move on to the next\none and try again the next day. Don't immediately jump to the answer , even\nif you can't solve it, and defini tely don't look at the answer without even\nattempting to solve it.\nLearning progra mming logic is not about getting the answer; it's about\nthe journey you take to arrive at the answer .\nWith that being said, the remaining chapters of this book are divided\naccording to the programming topics covered in the proposed exercises\n●      Mathematical Formulas (15 exercises)\n●      Conditionals (20 exercises)\n●      Loop Structures (25 exercises)\n●      Arrays (10 exercises)\n●      Strings (10 exercises)\n●      Matrices (10 exercises)\n●      Recursive Functions (10 exercises)\n●      + Extra Exercises at the End\nYou can check out the complete list of exercises at the end of the book.\nFrom now on, it's all up to you!",
+      "importance_rank": 0.13273663818836212
+    },
+    {
+      "page": 2,
+      "text": "Pr eface\nWelcome to this book where solved and commented Python exercises\nare prese nted. In this book, you will find a collection of over 100 exercises\ndesigned to help you improve your programming skills in this powerful\nlanguage.\nLearning to program involve s not only understanding theoretical\nconcepts but also applying those concepts in real-life situations. That's\nexactly what you will find in this book: a wide variety of problems ranging\nfrom basic fundamentals to more complex challenges.\nEach exercise is accompanied by a complete and detailed solution,\nwhich not only presents the source code but also explains the reasoning\nbehind the approach taken. These comments discuss important concepts,\nprovide valuable  tips, and help understand how programming logic can be\nefficiently applied in problem-solving.\nAs you progress through the exercises, you will be challenged with tasks\ninvolving mathe matical formula  manipulation, strings, conditio nals, loops,\nvector manipulation, matrices, and much more.\nThe main goal of this book is to provide a practical and comprehensive\nresource for programmers seeking improvement. Whether you are a\nbeginner in Python looking to solidify your knowledge or an experienced\nprogrammer wishing to deepen your expertise, these exercises will serve as\nan excellent study guide and reference. This book is also suitable for\nteachers who would like to have a rich collection of solved Programming\nLogic exercises to create exercises and questions for their students.\nIn several exercises, multiple solutions are presented for the same\nproposed problem, involving dif ferent strategies and techniques.\nEnjoy this learning journey and dive into the solved and commented\nPython exercises. Prepare yourself for stimulating challenges, creative\nsolutions, and a unique opportunity to enhance your programming skills.\nThis book was written using artificial intelligence tools in content\ncreation, but all materials have been reviewed and edited by the author to\ndeliver a final high-quality product.\nHappy reading, happy studying , and have fun exploring the fascinating\nworld of Python programming",
+      "importance_rank": 0.13232091069221497
+    },
+    {
+      "page": 27,
+      "text": "Logical Operators\nIn Python, there are three main logical operators: and, or and not. These operator s are\nused to combin e logical expressions and evaluate complex conditions. Here is a detailed\nexplanation of each operator:\nand operator:\nThe and operator is used to combine two or more logical expressions. It returns True only\nif all expressions are true. Otherwise, it returns False . The truth table for the and operator is\nas follows:\nx y x and y\nTrue True True\nTrue False False\nFalse True False\nFalse False False\nor operator:\nThe or operato r is used to combine two or more logical expressions. It returns True if at\nleast one of the expressions is true. Returns False  only if all expressions are false. The truth\ntable for the or operator is as follows:\nx y x or y\nTrue True True\nTrue False True\nFalse True True\nFalse False False\nnot operator:",
+      "importance_rank": 0.1230119839310646
+    },
+    {
+      "page": 39,
+      "text": "We start by prom pting the user to enter three numbers using the input  function. The float\nfunction is used to convert the input into floating-point numbers.\nAfter obtaining the numbers, we create a list called numbers  and store the three numbers\nin it.\nWe use the sort()  method to sort the elements in the numbers list in ascending order .\nFinally , we display the numb ers in ascending order using the print  function. We\nconcatenate the string \"The numbers in ascending order are:\" with the numbers  list, which\nwill automatically be converted to a string representation.\nThe program will display the numbers entered by the user in ascending order .\n26. Make a pr ogram that r eads the age of thr ee people and how many of them\nare of legal age (age 18 or older).",
+      "importance_rank": 0.12204566597938538
+    },
+    {
+      "page": 31,
+      "text": "We start by prompting the user to enter their age using the input  function. The int\nfunction is used to convert the input into an integer .\nAfter obtaining the age, we use an if statement to check if the age is greater than or equal\nto 18, which is the legal age in many countries. If the condition is true, we print the message\n\"You ar e of legal age. \" Otherwise, we print the message \" You ar e not of legal age. \"\n17. W rite a pr ogram that r eads two numbers and tells you which one is\nbigger .\nWe start by prompting the user to enter the first number using the input  function. The\nfloat function is used to convert the input into a floating-point number .\nSimilarly , we prompt the user to enter the second number .\nAfter obtaining both numbers,  we use an if-elif-else  statement to compare the two\nnumbers and determine which one is bigger .\nIn the first if condition, we check if number1  is greater than number2 . If true, we print\nthe message \" The first number is bigger .\"\nIn the elif conditio n, we check if number1  is less than number2 . If true, we print the\nmessage \" The second number is bigger .\"\nIf none of the above conditions are true, it means the numbers are equal, and we print the\nmessage \" Both numbers ar e equal \" in the else block.\nThe program will display the appropriate message based on the comparison of the two\nnumbers.\n18. W rite a pr ogram that asks the user for thr ee numbers and displays the\nlargest one.",
+      "importance_rank": 0.1168135479092598
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "page": 5,
+      "content": "If you have acquired this book, you want to start programming and be"
+    },
+    {
+      "page": 5,
+      "content": "logically challen ged as soon as possible, without wanting to read a sermon"
+    },
+    {
+      "page": 5,
+      "content": "on the mount. But it is important to highlight a few things before we begin."
+    },
+    {
+      "page": 5,
+      "content": "Even though many exercises may be considered easy, if you are new to"
+    },
+    {
+      "page": 5,
+      "content": "this programming journey , it is important for you to first try to solve the"
+    },
+    {
+      "page": 5,
+      "content": "problem on your own before looking at the solution. There is more than one"
+    },
+    {
+      "page": 5,
+      "content": "possible solution  to the same problem, and you need to think and develop"
+    },
+    {
+      "page": 5,
+      "content": "your own solution. Then, you can compare it with the proposed one in the"
+    },
+    {
+      "page": 5,
+      "content": "book, identify the strengths of each, and try to learn a little more."
+    },
+    {
+      "page": 5,
+      "content": "If the exercise is too difficult and you can't solve it, move on to the next"
+    },
+    {
+      "page": 5,
+      "content": "one and try again the next day. Don't immediately jump to the answer , even"
+    },
+    {
+      "page": 5,
+      "content": "if you can't solve it, and defini tely don't look at the answer without even"
+    },
+    {
+      "page": 5,
+      "content": "Learning progra mming logic is not about getting the answer; it's about"
+    },
+    {
+      "page": 5,
+      "content": "the journey you take to arrive at the answer ."
+    },
+    {
+      "page": 5,
+      "content": "With that being said, the remaining chapters of this book are divided"
+    },
+    {
+      "page": 5,
+      "content": "according to the programming topics covered in the proposed exercises"
+    },
+    {
+      "page": 5,
+      "content": "●      Mathematical Formulas (15 exercises)"
+    },
+    {
+      "page": 5,
+      "content": "●      Recursive Functions (10 exercises)"
+    },
+    {
+      "page": 5,
+      "content": "You can check out the complete list of exercises at the end of the book."
+    },
+    {
+      "page": 2,
+      "content": "Welcome to this book where solved and commented Python exercises"
+    },
+    {
+      "page": 2,
+      "content": "are prese nted. In this book, you will find a collection of over 100 exercises"
+    },
+    {
+      "page": 2,
+      "content": "designed to help you improve your programming skills in this powerful"
+    },
+    {
+      "page": 2,
+      "content": "Learning to program involve s not only understanding theoretical"
+    },
+    {
+      "page": 2,
+      "content": "concepts but also applying those concepts in real-life situations. That's"
+    },
+    {
+      "page": 2,
+      "content": "exactly what you will find in this book: a wide variety of problems ranging"
+    },
+    {
+      "page": 2,
+      "content": "from basic fundamentals to more complex challenges."
+    },
+    {
+      "page": 2,
+      "content": "Each exercise is accompanied by a complete and detailed solution,"
+    },
+    {
+      "page": 2,
+      "content": "which not only presents the source code but also explains the reasoning"
+    },
+    {
+      "page": 2,
+      "content": "behind the approach taken. These comments discuss important concepts,"
+    },
+    {
+      "page": 2,
+      "content": "provide valuable  tips, and help understand how programming logic can be"
+    },
+    {
+      "page": 2,
+      "content": "As you progress through the exercises, you will be challenged with tasks"
+    },
+    {
+      "page": 2,
+      "content": "involving mathe matical formula  manipulation, strings, conditio nals, loops,"
+    },
+    {
+      "page": 2,
+      "content": "vector manipulation, matrices, and much more."
+    },
+    {
+      "page": 2,
+      "content": "The main goal of this book is to provide a practical and comprehensive"
+    },
+    {
+      "page": 2,
+      "content": "resource for programmers seeking improvement. Whether you are a"
+    },
+    {
+      "page": 2,
+      "content": "beginner in Python looking to solidify your knowledge or an experienced"
+    },
+    {
+      "page": 2,
+      "content": "programmer wishing to deepen your expertise, these exercises will serve as"
+    },
+    {
+      "page": 2,
+      "content": "an excellent study guide and reference. This book is also suitable for"
+    },
+    {
+      "page": 2,
+      "content": "teachers who would like to have a rich collection of solved Programming"
+    },
+    {
+      "page": 2,
+      "content": "Logic exercises to create exercises and questions for their students."
+    },
+    {
+      "page": 2,
+      "content": "In several exercises, multiple solutions are presented for the same"
+    },
+    {
+      "page": 2,
+      "content": "proposed problem, involving dif ferent strategies and techniques."
+    },
+    {
+      "page": 2,
+      "content": "Enjoy this learning journey and dive into the solved and commented"
+    },
+    {
+      "page": 2,
+      "content": "Python exercises. Prepare yourself for stimulating challenges, creative"
+    },
+    {
+      "page": 2,
+      "content": "solutions, and a unique opportunity to enhance your programming skills."
+    },
+    {
+      "page": 2,
+      "content": "This book was written using artificial intelligence tools in content"
+    },
+    {
+      "page": 2,
+      "content": "creation, but all materials have been reviewed and edited by the author to"
+    },
+    {
+      "page": 2,
+      "content": "Happy reading, happy studying , and have fun exploring the fascinating"
+    },
+    {
+      "page": 27,
+      "content": "In Python, there are three main logical operators: and, or and not. These operator s are"
+    },
+    {
+      "page": 27,
+      "content": "used to combin e logical expressions and evaluate complex conditions. Here is a detailed"
+    },
+    {
+      "page": 27,
+      "content": "The and operator is used to combine two or more logical expressions. It returns True only"
+    },
+    {
+      "page": 27,
+      "content": "if all expressions are true. Otherwise, it returns False . The truth table for the and operator is"
+    },
+    {
+      "page": 27,
+      "content": "The or operato r is used to combine two or more logical expressions. It returns True if at"
+    },
+    {
+      "page": 27,
+      "content": "least one of the expressions is true. Returns False  only if all expressions are false. The truth"
+    },
+    {
+      "page": 39,
+      "content": "We start by prom pting the user to enter three numbers using the input  function. The float"
+    },
+    {
+      "page": 39,
+      "content": "function is used to convert the input into floating-point numbers."
+    },
+    {
+      "page": 39,
+      "content": "After obtaining the numbers, we create a list called numbers  and store the three numbers"
+    },
+    {
+      "page": 39,
+      "content": "We use the sort()  method to sort the elements in the numbers list in ascending order ."
+    },
+    {
+      "page": 39,
+      "content": "Finally , we display the numb ers in ascending order using the print  function. We"
+    },
+    {
+      "page": 39,
+      "content": "concatenate the string \"The numbers in ascending order are:\" with the numbers  list, which"
+    },
+    {
+      "page": 39,
+      "content": "will automatically be converted to a string representation."
+    },
+    {
+      "page": 39,
+      "content": "The program will display the numbers entered by the user in ascending order ."
+    },
+    {
+      "page": 39,
+      "content": "26. Make a pr ogram that r eads the age of thr ee people and how many of them"
+    },
+    {
+      "page": 31,
+      "content": "We start by prompting the user to enter their age using the input  function. The int"
+    },
+    {
+      "page": 31,
+      "content": "function is used to convert the input into an integer ."
+    },
+    {
+      "page": 31,
+      "content": "After obtaining the age, we use an if statement to check if the age is greater than or equal"
+    },
+    {
+      "page": 31,
+      "content": "to 18, which is the legal age in many countries. If the condition is true, we print the message"
+    },
+    {
+      "page": 31,
+      "content": "\"You ar e of legal age. \" Otherwise, we print the message \" You ar e not of legal age. \""
+    },
+    {
+      "page": 31,
+      "content": "17. W rite a pr ogram that r eads two numbers and tells you which one is"
+    },
+    {
+      "page": 31,
+      "content": "We start by prompting the user to enter the first number using the input  function. The"
+    },
+    {
+      "page": 31,
+      "content": "float function is used to convert the input into a floating-point number ."
+    },
+    {
+      "page": 31,
+      "content": "Similarly , we prompt the user to enter the second number ."
+    },
+    {
+      "page": 31,
+      "content": "After obtaining both numbers,  we use an if-elif-else  statement to compare the two"
+    },
+    {
+      "page": 31,
+      "content": "numbers and determine which one is bigger ."
+    },
+    {
+      "page": 31,
+      "content": "In the first if condition, we check if number1  is greater than number2 . If true, we print"
+    },
+    {
+      "page": 31,
+      "content": "the message \" The first number is bigger .\""
+    },
+    {
+      "page": 31,
+      "content": "In the elif conditio n, we check if number1  is less than number2 . If true, we print the"
+    },
+    {
+      "page": 31,
+      "content": "If none of the above conditions are true, it means the numbers are equal, and we print the"
+    },
+    {
+      "page": 31,
+      "content": "message \" Both numbers ar e equal \" in the else block."
+    },
+    {
+      "page": 31,
+      "content": "The program will display the appropriate message based on the comparison of the two"
+    },
+    {
+      "page": 31,
+      "content": "18. W rite a pr ogram that asks the user for thr ee numbers and displays the"
+    }
+  ]
+}

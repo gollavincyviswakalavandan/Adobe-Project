@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "persona": "A data analyst with 5 years of experience in business intelligence.",
+    "job_to_be_done": "Looking for insights related to customer churn analysis.",
+    "processed_at": "2025-07-25T01:56:22.589777Z"
+  },
+  "extracted_sections": [
+    {
+      "page": 13,
+      "text": "SQL has many built-in functions for performing calculations on data.\nSQL aggregate functions return a single value, calculated from values in a column.\nFunction Description\nAVG() Returns the average value\nCOUNT() Returns the number of rows\nFIRST() Returns the first value\nLAST() Returns the last value\nMAX() Returns the largest value\nMIN() Returns the smallest value\nROUND() Rounds a numeric field to the number of decimals specified\nSUM() Returns the sumTHE WORLD'S LARGEST WEB DEVELOPER SITE\nCreated By www.ebooktutorials.in\nContent Downloaded from www.w3schools.com\n113",
+      "importance_rank": 0.2671908438205719
+    },
+    {
+      "page": 18,
+      "text": "In this tutorial we will use the well-known Northwind sample database.\nBelow is a selection from the \"Orders\" table:\nOrderID CustomerID EmployeeID OrderDate ShipperID\n10265 7 2 1996-07-25 1\n10266 87 3 1996-07-26 310267 25 4 1996-07-29 1\nThe following SQL statement counts the numb er of orders from \"CustomerID\"=7 from\nthe \"Orders\" table:\nSELECT COUNT (CustomerID)  AS OrdersFromCustomerID7  FROM Orders\nWHERE CustomerID= 7;\nThe following SQL statement counts the total number of orders in the \"Orders\" table:\nSELECT COUNT (*) AS NumberOfOrders  FROM Orders;\nCreated By www.ebooktutorials.in\nContent Downloaded from www.w3schools.com\n118",
+      "importance_rank": 0.24526147544384003
+    },
+    {
+      "page": 15,
+      "text": "The AVG() function returns the average value of a numeric column.\nSQL AVG() Syntax\nSELECT AVG(column_name)  FROM table_name\nIn this tutorial we will use the well-known Northwind sample database.\nBelow is a selection from the \"Products\" table:\nProductID ProductName SupplierID CategoryID Unit Price\n1 Chais 1 1 10 boxes x 20 bags 18\n2 Chang 1 1 24 - 12 oz bottles 19\n3 Aniseed Syrup 1 2 12 - 550 ml bottles 10\n4 Chef Anton's Cajun Seasoning 2 2 48 - 6 oz jars 21.35\n5 Chef Anton's Gumbo Mix 2 2 36 boxes 25\nThe following SQL statement gets the average value of the \"Price\" column from the \"Products\" table:\nExample\nSELECT AVG(Price)  AS PriceAverage  FROM Products;THE WORLD'S LARGEST WEB DEVELOPER SITE\nCreated By www.ebooktutorials.in\nContent Downloaded from www.w3schools.com\n115",
+      "importance_rank": 0.23537884652614594
+    },
+    {
+      "page": 31,
+      "text": "The following SQL statement selects the \"CustomerName\" and the length of the values in the \"Address\"\ncolumn from the \"Customers\" table:\nExample\nSELECT CustomerName,LEN(Address)  as LengthOfAddress\nFROM Customers;\nCreated By www.ebooktutorials.in\nContent Downloaded from www.w3schools.com\n131",
+      "importance_rank": 0.22805193066596985
+    },
+    {
+      "page": 35,
+      "text": "3 Antonio Moreno\nTaqueríaAntonioMorenoMataderos2312MéxicoD.F.05023 Mexico\n4 Around the Horn Thomas Hardy 120 Hanover\nSq.London WA1 1DP UK\n5 BerglundssnabbköpChristinaBerglundBerguvsvägen8Luleå S-958 22 Sweden\nThe following SQL statement selects the first four  characters from the \"City\" column from the\n\"Customers\" table:\nExample\nSELECT MID(City, 1,4) AS ShortCity\nFROM Customers;\nCreated By www.ebooktutorials.in\nContent Downloaded from www.w3schools.com\n135",
+      "importance_rank": 0.2266111522912979
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "page": 13,
+      "content": "SQL has many built-in functions for performing calculations on data."
+    },
+    {
+      "page": 13,
+      "content": "SQL aggregate functions return a single value, calculated from values in a column."
+    },
+    {
+      "page": 13,
+      "content": "ROUND() Rounds a numeric field to the number of decimals specified"
+    },
+    {
+      "page": 13,
+      "content": "SUM() Returns the sumTHE WORLD'S LARGEST WEB DEVELOPER SITE"
+    },
+    {
+      "page": 13,
+      "content": "Content Downloaded from www.w3schools.com"
+    },
+    {
+      "page": 18,
+      "content": "In this tutorial we will use the well-known Northwind sample database."
+    },
+    {
+      "page": 18,
+      "content": "Below is a selection from the \"Orders\" table:"
+    },
+    {
+      "page": 18,
+      "content": "OrderID CustomerID EmployeeID OrderDate ShipperID"
+    },
+    {
+      "page": 18,
+      "content": "10266 87 3 1996-07-26 310267 25 4 1996-07-29 1"
+    },
+    {
+      "page": 18,
+      "content": "The following SQL statement counts the numb er of orders from \"CustomerID\"=7 from"
+    },
+    {
+      "page": 18,
+      "content": "SELECT COUNT (CustomerID)  AS OrdersFromCustomerID7  FROM Orders"
+    },
+    {
+      "page": 18,
+      "content": "The following SQL statement counts the total number of orders in the \"Orders\" table:"
+    },
+    {
+      "page": 18,
+      "content": "SELECT COUNT (*) AS NumberOfOrders  FROM Orders;"
+    },
+    {
+      "page": 18,
+      "content": "Content Downloaded from www.w3schools.com"
+    },
+    {
+      "page": 15,
+      "content": "The AVG() function returns the average value of a numeric column."
+    },
+    {
+      "page": 15,
+      "content": "In this tutorial we will use the well-known Northwind sample database."
+    },
+    {
+      "page": 15,
+      "content": "Below is a selection from the \"Products\" table:"
+    },
+    {
+      "page": 15,
+      "content": "ProductID ProductName SupplierID CategoryID Unit Price"
+    },
+    {
+      "page": 15,
+      "content": "3 Aniseed Syrup 1 2 12 - 550 ml bottles 10"
+    },
+    {
+      "page": 15,
+      "content": "4 Chef Anton's Cajun Seasoning 2 2 48 - 6 oz jars 21.35"
+    },
+    {
+      "page": 15,
+      "content": "The following SQL statement gets the average value of the \"Price\" column from the \"Products\" table:"
+    },
+    {
+      "page": 15,
+      "content": "SELECT AVG(Price)  AS PriceAverage  FROM Products;THE WORLD'S LARGEST WEB DEVELOPER SITE"
+    },
+    {
+      "page": 15,
+      "content": "Content Downloaded from www.w3schools.com"
+    },
+    {
+      "page": 31,
+      "content": "The following SQL statement selects the \"CustomerName\" and the length of the values in the \"Address\""
+    },
+    {
+      "page": 31,
+      "content": "SELECT CustomerName,LEN(Address)  as LengthOfAddress"
+    },
+    {
+      "page": 31,
+      "content": "Content Downloaded from www.w3schools.com"
+    },
+    {
+      "page": 35,
+      "content": "TaqueríaAntonioMorenoMataderos2312MéxicoD.F.05023 Mexico"
+    },
+    {
+      "page": 35,
+      "content": "4 Around the Horn Thomas Hardy 120 Hanover"
+    },
+    {
+      "page": 35,
+      "content": "5 BerglundssnabbköpChristinaBerglundBerguvsvägen8Luleå S-958 22 Sweden"
+    },
+    {
+      "page": 35,
+      "content": "The following SQL statement selects the first four  characters from the \"City\" column from the"
+    },
+    {
+      "page": 35,
+      "content": "Content Downloaded from www.w3schools.com"
+    }
+  ]
+}

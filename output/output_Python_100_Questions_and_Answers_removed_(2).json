@@ -1,0 +1,328 @@
+{
+  "metadata": {
+    "persona": "A data analyst with 5 years of experience in business intelligence.",
+    "job_to_be_done": "Looking for insights related to customer churn analysis.",
+    "processed_at": "2025-07-25T01:56:22.589777Z"
+  },
+  "extracted_sections": [
+    {
+      "page": 9,
+      "text": "The program starts by prompti ng the user to enter a word using the\ninput()  function. The text \" Enter a wor d: \" is displayed as a prompt, and the\nuser can provide their input. The entered word is stored in the variable\nword .\nThe program uses a for loop to iterate over each character (letter ) in the\nword. The loop variable letter  takes on the value of each character  in the\nword , one at a time.\nInside the loop, the program uses the print()  function to display each\nletter on a separate line. The print(letter)  statement prints the value of the\nletter variable, which represents the current letter in the iteration.\nThe loop continues to iterate over each letter in the word until all letters\nhave been processed.\nUsing a while  loop\nThe program prompts the user to enter a word using the input()  function,\nand the entered word is stored in the variable word .\nWe initialize the variable index  to 0, which will be used to keep track of\nthe current position in the word.\nThe while  loop is used to iterate over the characters of the word . The\nloop continues as long as the index is less than the length of the word ,\nwhich is obtained using the len()  function.\nInside the loop, the program retrieves the character at the curre nt index\nposition using word[index]  and assigns it to the variable letter .\nThe program then prints the current letter  using the print(letter)\nstatement.",
+      "importance_rank": 0.11935602873563766
+    },
+    {
+      "page": 23,
+      "text": "The program initializes a 3x3 matrix matrix  with all elements initially\nset to 0.\nIt prompts the user to enter the values for the matrix.\nUsing nested for loops, the program iterates over each position of the\nmatrix and prompts the user to enter the corresponding value. The values\nentered by the user are then assigned to the respective positions in the\nmatrix.\nAfter filling the matrix, the program calculates the sum of the main\ndiagonal values . It initializes the variable sum_diagonal  to 0 and uses a\nsingle for loop to iterate over the main diagonal elements (positions where\nthe row index equals the column index), adding each element to the\nsum_diagonal  variable.\nThe program displays the matrix by iterating over each row and printing\nit.",
+      "importance_rank": 0.11201746761798859
+    },
+    {
+      "page": 47,
+      "text": "The base case is when the length of the string is 0 or 1. In this case,\nthere's no need to reverse the string, so it is returned as is.\nIn the recursive case, the funct ion recursively calls itself, passing the\nsubstring startin g from the second character (string[1:] ), and then appe nds\nthe first character of the original string ( string[0] ).\nThe recursive calls continue until the base case is reached, and the\nreversed substrings are concatenated to reverse the entire string.\nThe function returns the reversed string.\n98. Develop a r ecursive function to find the smallest value in an\narray .\nThe find_smallest  function takes an array arr as an ar gument.\nThe base case is when the array has only one element. In this case,\nthere's no need to compare, so the single element is returned as the smallest\nvalue.\nIn the recursive case, the function compares the first element of the array\n(arr[0] ) with the smallest eleme nt in the rest of the array\n(find_smallest(arr[1:]) ).\nThe recursive calls continue until the base case is reached, and the\nsmallest values are compared and propagated back up.\n99. W rite a r ecursive function to determine whether a word is a\npalindr ome.",
+      "importance_rank": 0.10812978446483612
+    },
+    {
+      "page": 22,
+      "text": "elements of a tuple to multi ple variables, which is known as tuple\nunpacking. For example:\nTuple Methods : Python provides a few built-in methods for tuples, such\nas count()  to count the number of occurrences of a specific element and\nindex()  to find the index of the first occurrence of a specific element.\nTuple Operations : Tuples support operations like concatenation (+\noperator) and repetition ( * operator). For example:\nIterating over a Tuple: You can iterate  over the elements of a tuple using\na for loop or other looping constructs.\nTuples are commonly used when you want to group relate d values\ntogether , especially when those  values should not be modified. They are\nuseful for representing fixed collections of items, function return values,\nand dictionary keys, among other use cases.\nAlthough tuples are immutable, they can contain mutable objects, such\nas lists, allowing you to have a mix of mutable and immutable elements\nwithin a tuple.\nNow , let's go to the exercises.\n81. W rite a pr ogram that fills a 3x3 matrix with values enter ed\nby the user and displays the sum of the main diagonal values.",
+      "importance_rank": 0.10313922166824341
+    },
+    {
+      "page": 46,
+      "text": "In the recursive case, the functi on multiplies base with the result of the\nrecursive call to power , where the exponent  is decreased by 1.\nThe recursive calls continue until the base case is reached.\nThe function returns the result of multiplying base with the power of\n(base, exponent-1) .\n96. Implement a r ecursive function to find the gr eatest common\ndivisor (GCD) of two numbers.\nThe gcd functio n takes two arguments: a and b, represe nting the two\nnumbers for which we want to find the GCD.\nThe base case is when b become s 0. In this case, we have found the\nGCD, which is a.\nIn the recursive case, the function calculates the GCD of b and the\nremainder of a divided by b using the Euclidean algorithm.\nThe recursive calls continue until the base case is reached.\n97. Cr eate a r ecursive function to r everse a string.\nThe reverse_string  function takes a string string  as an ar gument.",
+      "importance_rank": 0.09418966621160507
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "page": 9,
+      "content": "The program starts by prompti ng the user to enter a word using the"
+    },
+    {
+      "page": 9,
+      "content": "input()  function. The text \" Enter a wor d: \" is displayed as a prompt, and the"
+    },
+    {
+      "page": 9,
+      "content": "user can provide their input. The entered word is stored in the variable"
+    },
+    {
+      "page": 9,
+      "content": "The program uses a for loop to iterate over each character (letter ) in the"
+    },
+    {
+      "page": 9,
+      "content": "word. The loop variable letter  takes on the value of each character  in the"
+    },
+    {
+      "page": 9,
+      "content": "Inside the loop, the program uses the print()  function to display each"
+    },
+    {
+      "page": 9,
+      "content": "letter on a separate line. The print(letter)  statement prints the value of the"
+    },
+    {
+      "page": 9,
+      "content": "letter variable, which represents the current letter in the iteration."
+    },
+    {
+      "page": 9,
+      "content": "The loop continues to iterate over each letter in the word until all letters"
+    },
+    {
+      "page": 9,
+      "content": "The program prompts the user to enter a word using the input()  function,"
+    },
+    {
+      "page": 9,
+      "content": "and the entered word is stored in the variable word ."
+    },
+    {
+      "page": 9,
+      "content": "We initialize the variable index  to 0, which will be used to keep track of"
+    },
+    {
+      "page": 9,
+      "content": "The while  loop is used to iterate over the characters of the word . The"
+    },
+    {
+      "page": 9,
+      "content": "loop continues as long as the index is less than the length of the word ,"
+    },
+    {
+      "page": 9,
+      "content": "which is obtained using the len()  function."
+    },
+    {
+      "page": 9,
+      "content": "Inside the loop, the program retrieves the character at the curre nt index"
+    },
+    {
+      "page": 9,
+      "content": "position using word[index]  and assigns it to the variable letter ."
+    },
+    {
+      "page": 9,
+      "content": "The program then prints the current letter  using the print(letter)"
+    },
+    {
+      "page": 23,
+      "content": "The program initializes a 3x3 matrix matrix  with all elements initially"
+    },
+    {
+      "page": 23,
+      "content": "It prompts the user to enter the values for the matrix."
+    },
+    {
+      "page": 23,
+      "content": "Using nested for loops, the program iterates over each position of the"
+    },
+    {
+      "page": 23,
+      "content": "matrix and prompts the user to enter the corresponding value. The values"
+    },
+    {
+      "page": 23,
+      "content": "entered by the user are then assigned to the respective positions in the"
+    },
+    {
+      "page": 23,
+      "content": "After filling the matrix, the program calculates the sum of the main"
+    },
+    {
+      "page": 23,
+      "content": "diagonal values . It initializes the variable sum_diagonal  to 0 and uses a"
+    },
+    {
+      "page": 23,
+      "content": "single for loop to iterate over the main diagonal elements (positions where"
+    },
+    {
+      "page": 23,
+      "content": "the row index equals the column index), adding each element to the"
+    },
+    {
+      "page": 23,
+      "content": "The program displays the matrix by iterating over each row and printing"
+    },
+    {
+      "page": 47,
+      "content": "The base case is when the length of the string is 0 or 1. In this case,"
+    },
+    {
+      "page": 47,
+      "content": "there's no need to reverse the string, so it is returned as is."
+    },
+    {
+      "page": 47,
+      "content": "In the recursive case, the funct ion recursively calls itself, passing the"
+    },
+    {
+      "page": 47,
+      "content": "substring startin g from the second character (string[1:] ), and then appe nds"
+    },
+    {
+      "page": 47,
+      "content": "the first character of the original string ( string[0] )."
+    },
+    {
+      "page": 47,
+      "content": "The recursive calls continue until the base case is reached, and the"
+    },
+    {
+      "page": 47,
+      "content": "reversed substrings are concatenated to reverse the entire string."
+    },
+    {
+      "page": 47,
+      "content": "The function returns the reversed string."
+    },
+    {
+      "page": 47,
+      "content": "98. Develop a r ecursive function to find the smallest value in an"
+    },
+    {
+      "page": 47,
+      "content": "The find_smallest  function takes an array arr as an ar gument."
+    },
+    {
+      "page": 47,
+      "content": "The base case is when the array has only one element. In this case,"
+    },
+    {
+      "page": 47,
+      "content": "there's no need to compare, so the single element is returned as the smallest"
+    },
+    {
+      "page": 47,
+      "content": "In the recursive case, the function compares the first element of the array"
+    },
+    {
+      "page": 47,
+      "content": "(arr[0] ) with the smallest eleme nt in the rest of the array"
+    },
+    {
+      "page": 47,
+      "content": "The recursive calls continue until the base case is reached, and the"
+    },
+    {
+      "page": 47,
+      "content": "smallest values are compared and propagated back up."
+    },
+    {
+      "page": 47,
+      "content": "99. W rite a r ecursive function to determine whether a word is a"
+    },
+    {
+      "page": 22,
+      "content": "elements of a tuple to multi ple variables, which is known as tuple"
+    },
+    {
+      "page": 22,
+      "content": "Tuple Methods : Python provides a few built-in methods for tuples, such"
+    },
+    {
+      "page": 22,
+      "content": "as count()  to count the number of occurrences of a specific element and"
+    },
+    {
+      "page": 22,
+      "content": "index()  to find the index of the first occurrence of a specific element."
+    },
+    {
+      "page": 22,
+      "content": "Tuple Operations : Tuples support operations like concatenation (+"
+    },
+    {
+      "page": 22,
+      "content": "operator) and repetition ( * operator). For example:"
+    },
+    {
+      "page": 22,
+      "content": "Iterating over a Tuple: You can iterate  over the elements of a tuple using"
+    },
+    {
+      "page": 22,
+      "content": "Tuples are commonly used when you want to group relate d values"
+    },
+    {
+      "page": 22,
+      "content": "together , especially when those  values should not be modified. They are"
+    },
+    {
+      "page": 22,
+      "content": "useful for representing fixed collections of items, function return values,"
+    },
+    {
+      "page": 22,
+      "content": "and dictionary keys, among other use cases."
+    },
+    {
+      "page": 22,
+      "content": "Although tuples are immutable, they can contain mutable objects, such"
+    },
+    {
+      "page": 22,
+      "content": "as lists, allowing you to have a mix of mutable and immutable elements"
+    },
+    {
+      "page": 22,
+      "content": "81. W rite a pr ogram that fills a 3x3 matrix with values enter ed"
+    },
+    {
+      "page": 22,
+      "content": "by the user and displays the sum of the main diagonal values."
+    },
+    {
+      "page": 46,
+      "content": "In the recursive case, the functi on multiplies base with the result of the"
+    },
+    {
+      "page": 46,
+      "content": "recursive call to power , where the exponent  is decreased by 1."
+    },
+    {
+      "page": 46,
+      "content": "The recursive calls continue until the base case is reached."
+    },
+    {
+      "page": 46,
+      "content": "The function returns the result of multiplying base with the power of"
+    },
+    {
+      "page": 46,
+      "content": "96. Implement a r ecursive function to find the gr eatest common"
+    },
+    {
+      "page": 46,
+      "content": "The gcd functio n takes two arguments: a and b, represe nting the two"
+    },
+    {
+      "page": 46,
+      "content": "numbers for which we want to find the GCD."
+    },
+    {
+      "page": 46,
+      "content": "The base case is when b become s 0. In this case, we have found the"
+    },
+    {
+      "page": 46,
+      "content": "In the recursive case, the function calculates the GCD of b and the"
+    },
+    {
+      "page": 46,
+      "content": "remainder of a divided by b using the Euclidean algorithm."
+    },
+    {
+      "page": 46,
+      "content": "The recursive calls continue until the base case is reached."
+    },
+    {
+      "page": 46,
+      "content": "97. Cr eate a r ecursive function to r everse a string."
+    },
+    {
+      "page": 46,
+      "content": "The reverse_string  function takes a string string  as an ar gument."
+    }
+  ]
+}

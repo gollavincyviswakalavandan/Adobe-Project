@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "persona": "A data analyst with 5 years of experience in business intelligence.",
+    "job_to_be_done": "Looking for insights related to customer churn analysis.",
+    "processed_at": "2025-07-25T01:56:22.589777Z"
+  },
+  "extracted_sections": [
+    {
+      "page": 3,
+      "text": "3 \nUNIT -2 OPE RATING SYSTEMS, DEPT.OF CSE, AC ET, SURAMPALEM  Once the process is assigned to the C PU and is executing, one of the following several events can occur:  \n• The process could issue an I/O request, and then be placed in the  I/O queue . \n• The process could create a new sub process  and wait for its termination.  \n• The process could be removed forcibly from the CPU, as a result of an interrupt, and be put back in the \nready queue.  \n \nThere are three types of schedulers available:  \n▸ Long Term Scheduler  \n▸ Short Term Scheduler  \n▸ Medium Term Scheduler  \n \nLong Term or job scheduler:  \n• It brings the new process to the ‘Ready State’.  \n•  It controls  Degree of Multi -programming , i.e., number of process present in re ady state at \nany point of time.  \n•  It is important that the long -term scheduler make a careful selection of both IO and CPU \nbound process.  \n•  IO bound tasks are which use much of their time in input and output operations while CPU \nbound processes are which spe nd their time on CPU.  \n• The job scheduler increases efficiency by maintaining a balance between the two.  \n \nShort term or CPU scheduler:   \n• It is responsible for selecting one process from ready state for scheduling it on the running \nstate.  \n• Note:  Short -term scheduler only selects the process to schedule it doesn’t load the \nprocess on running.  Here is when all the scheduling algorithms are used. The CPU \nscheduler is responsible for ensuring there is no starvation  \n owing to high burst time process es. \n \n \nDispatcher  is responsible for loading the process selected by Short -term \nscheduler on the CPU (Ready to Running State) Context switching is done by  \ndispatcher only.  \n• A dispatcher does the following:  \n•  Switching context.  \n• Switching to user mode.  \n• Jumping to the proper location in the newly loaded program.  \n \n \nMedium -term scheduler:  \n• It is responsible for suspending and resuming the \nprocess.  \n• It mainly does swapping (moving processes from main \nmemory to disk and vice versa).  \n• Swapping may be necessary to improve the process mix \nor because a change in memory requirements has \novercommitted available memory, requiring memory to \nbe freed up.  \n•  It is helpful in maintaining a perfect balance between \nthe I/O bound and the CPU bound. It reduces the degree \nof multiprogramming.  The ready queue and various \nI/O dev ice queues   \n \n Seco\nndary \nmem\nory \nloa\nds \n (ready \nqueue) \nresides \nin main \nmemory  \nMain \nmemo\nry \nJob \nqueue \nwill be \nresides  \nQueueing -diagram representation of process scheduling   \n \nAddition of a medium -term scheduling to the queueing \ndiagram",
+      "importance_rank": 0.1976364403963089
+    },
+    {
+      "page": 15,
+      "text": "15 \nUNIT -2 OPE RATING SYSTEMS, DEPT.OF CSE, AC ET, SURAMPALEM  4. When a process enters the ready queue, its PCB is linked onto the tail of the queue.  \n5. When the CPU is free, it is allocated to the process at the head of the queue.  \n6. The running process  is then removed from the queue.   \n \n \nExample : \nConsider the following set of processes that arrive at time 0, with the length of the CPU burst given in milliseconds  \n \nIf the processes arrive in the order P1, P2, P3, and are served in FCFS order,  we get the result shown in the following Gantt \nchart  \n \n• Waiting time for P1 = 0 milliseconds  \n•  Waiting time for P2 = 24 milliseconds  \n• Waiting time for P3 =  27 milliseconds  \n                 Thus, the average waiting time is (0 + 24 + 27)/3 = 17 milliseconds.  \nIf the processes arrive in the order P2, P3, P1, however, the results will be as shown in the following Gantt chart:  \n \n• Waiting time for P1 = 6 milliseconds  \n•  Waiting time for P2 = 0 milliseconds  \n• Waiting time for P3 =  3 mi lliseconds  \n                 Thus, the average waiting time is (6 + 0 + 3)/3 = 3 milliseconds.  \nThis reduction is substantial. Thus, the average waiting time under an FCFS policy is generally not minimal and may vary \nsubstantially if the processes’ CPU burs t times vary greatly.  \n \nThe FCFS Scheduling algorithm is Non -Preemptive   \nExample : find  the average waiting time using the FCFS scheduling algorithm.  \n \n \nExample:2",
+      "importance_rank": 0.15472453832626343
+    },
+    {
+      "page": 18,
+      "text": "18 \nUNIT -2 OPE RATING SYSTEMS, DEPT.OF CSE, AC ET, SURAMPALEM   \n \nProblem with Non Pre -emptive SJF  \n• If the  arrival time  for processes are different, which means all the processes are not  available in the ready queue \nat time  0, and some jobs arrive after some time, in such situation, sometimes process with short burst time have \nto wait for the current process's execution to finish, because in Non Pre -emptive SJF, on arrival of a process wi th \nshort duration, the existing job/process's execution is not halted/stopped to execute the short job first.  \n \nShortest Job First Scheduling (Preemptive)  \n1. In Preemptive Shortest Job First Scheduling, jobs are put into ready queue as they arrive, but as a process \nwith  short burst time  arrives, the existing process is preempted or removed from execution, and the shorter job is \nexecuted first.  \n2. The average waiting time for preemptive shortest job first scheduling is less than both,non preemptive SJF \nscheduling  and FCFS scheduling.  \n3. The Pre -emptive SJF is also known as  Shortest Remaining Time First , because at any given point of time, the job \nwith the shortest remaining time is executed first.  \n \nExample:SJF (Preemptive)  \n \nConsider the set of 5 processes whose arri val time and burst time are given below - \n \n  \n \n \n \n \n \nIf the CPU scheduling policy is SJF preemptive, calculate the average waiting time and average turnaround  time .",
+      "importance_rank": 0.1320612132549286
+    },
+    {
+      "page": 20,
+      "text": "20 \nUNIT -2 OPE RATING SYSTEMS, DEPT.OF CSE, AC ET, SURAMPALEM   \nExample:  Priority Scheduling (Non -Preemptive)  \n \n \nExample:  \nConsider the set of 5 processes whose arrival time and burst time are given below - \n \nIf the CPU scheduling policy is priority non -preemptive, calculate the average waiting time and average turnaround  time. \n(Higher number represents higher priority)  \n \n \nUsing priority scheduling, we would schedule these processes according to the  following  \nAverage Waiting Time  =(6+0+16+18+1)/5  \n                                         =  41/5  \n                                          =8.2 ms  \nConsider the below table for  processes with their respective CPU burst times and the \npriorities.",
+      "importance_rank": 0.12741413712501526
+    },
+    {
+      "page": 16,
+      "text": "16 \nUNIT -2 OPE RATING SYSTEMS, DEPT.OF CSE, AC ET, SURAMPALEM   \nAverage Turn Around time =  (5+11+3+13+8)/5  \n                                                 =  40/5  \n                                                 =  8 ms  \nAverage Waiting Time         =  (0+7+0+11+4)/5  \n                                                =  22/5  \n                                                =  4.4 ms   \nConvoy Effect  \n1. FCFS algorithm is non -pre-emptive in nature, that is, once \nCPU time has been allocated to a process, other processes \ncan get CPU time only after the current process has \nfinished. This property of FCFS scheduling leads to the \nsituation called Convoy Effect.  \n2. Convoy Effect is phenomenon associated with the First \nCome First Serve (FCFS) algorithm, in which the whole \nOperating System slows down due to few slow processes.  \n3. Suppose there is one CPU intensive (large burst time) \nprocess in the ready queue, and severa l other processes \nwith relatively less burst times but are Input/Output (I/O) \nbound (Need I/O operations frequently)  \n \nSteps are as following below:  \n1. The I/O bound processes are first allocated CPU time. As they are less CPU intensive, they quickly get execu ted and goto \nI/O queues.  \n2. Now, the CPU intensive process is allocated CPU time. As its burst time is high, it takes time to complete.  \n3. While the CPU intensive process is being executed, the I/O bound processes complete their I/O operations and are \nmoved back  to ready queue.  \n4. However, the I/O bound processes are made to wait as the CPU intensive process still hasn’t finished.  This    leads to I/O \ndevices being idle.   \n5. When the CPU intensive process gets over, it is sent to the I/O queue so that it can access an I/O device.  \n6. Meanwhile, the I/O bound processes get their required CPU time and move back to I/O queue.  \n7. However, they are made to wait because the CPU intensive process is still accessing an I/O device. As a result,  the CPU \nis sitting idle now . \nCalculation of the average  waiting time and average Turnaround  time, if FCFS Scheduling Algorithm is \nfollowed  \n0 \n 3 \n 4 \n 9 \n 13 \n 17 \n 19 \nGantt chart  \nThe shaded box represents the idle time of CPU  \nTurn Around Time = Completion Time – Arrival Time  \nWaiting Time = Turn Around Time – Burst Time",
+      "importance_rank": 0.12260879576206207
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "page": 3,
+      "content": "UNIT -2 OPE RATING SYSTEMS, DEPT.OF CSE, AC ET, SURAMPALEM  Once the process is assigned to the C PU and is executing, one of the following several events can occur:"
+    },
+    {
+      "page": 3,
+      "content": "• The process could issue an I/O request, and then be placed in the  I/O queue ."
+    },
+    {
+      "page": 3,
+      "content": "• The process could create a new sub process  and wait for its termination."
+    },
+    {
+      "page": 3,
+      "content": "• The process could be removed forcibly from the CPU, as a result of an interrupt, and be put back in the"
+    },
+    {
+      "page": 3,
+      "content": "There are three types of schedulers available:"
+    },
+    {
+      "page": 3,
+      "content": "• It brings the new process to the ‘Ready State’."
+    },
+    {
+      "page": 3,
+      "content": "•  It controls  Degree of Multi -programming , i.e., number of process present in re ady state at"
+    },
+    {
+      "page": 3,
+      "content": "•  It is important that the long -term scheduler make a careful selection of both IO and CPU"
+    },
+    {
+      "page": 3,
+      "content": "•  IO bound tasks are which use much of their time in input and output operations while CPU"
+    },
+    {
+      "page": 3,
+      "content": "bound processes are which spe nd their time on CPU."
+    },
+    {
+      "page": 3,
+      "content": "• The job scheduler increases efficiency by maintaining a balance between the two."
+    },
+    {
+      "page": 3,
+      "content": "• It is responsible for selecting one process from ready state for scheduling it on the running"
+    },
+    {
+      "page": 3,
+      "content": "• Note:  Short -term scheduler only selects the process to schedule it doesn’t load the"
+    },
+    {
+      "page": 3,
+      "content": "process on running.  Here is when all the scheduling algorithms are used. The CPU"
+    },
+    {
+      "page": 3,
+      "content": "scheduler is responsible for ensuring there is no starvation"
+    },
+    {
+      "page": 3,
+      "content": "Dispatcher  is responsible for loading the process selected by Short -term"
+    },
+    {
+      "page": 3,
+      "content": "scheduler on the CPU (Ready to Running State) Context switching is done by"
+    },
+    {
+      "page": 3,
+      "content": "• Jumping to the proper location in the newly loaded program."
+    },
+    {
+      "page": 3,
+      "content": "• It is responsible for suspending and resuming the"
+    },
+    {
+      "page": 3,
+      "content": "• It mainly does swapping (moving processes from main"
+    },
+    {
+      "page": 3,
+      "content": "• Swapping may be necessary to improve the process mix"
+    },
+    {
+      "page": 3,
+      "content": "or because a change in memory requirements has"
+    },
+    {
+      "page": 3,
+      "content": "overcommitted available memory, requiring memory to"
+    },
+    {
+      "page": 3,
+      "content": "•  It is helpful in maintaining a perfect balance between"
+    },
+    {
+      "page": 3,
+      "content": "the I/O bound and the CPU bound. It reduces the degree"
+    },
+    {
+      "page": 3,
+      "content": "of multiprogramming.  The ready queue and various"
+    },
+    {
+      "page": 3,
+      "content": "Queueing -diagram representation of process scheduling"
+    },
+    {
+      "page": 3,
+      "content": "Addition of a medium -term scheduling to the queueing"
+    },
+    {
+      "page": 15,
+      "content": "UNIT -2 OPE RATING SYSTEMS, DEPT.OF CSE, AC ET, SURAMPALEM  4. When a process enters the ready queue, its PCB is linked onto the tail of the queue."
+    },
+    {
+      "page": 15,
+      "content": "5. When the CPU is free, it is allocated to the process at the head of the queue."
+    },
+    {
+      "page": 15,
+      "content": "6. The running process  is then removed from the queue."
+    },
+    {
+      "page": 15,
+      "content": "Consider the following set of processes that arrive at time 0, with the length of the CPU burst given in milliseconds"
+    },
+    {
+      "page": 15,
+      "content": "If the processes arrive in the order P1, P2, P3, and are served in FCFS order,  we get the result shown in the following Gantt"
+    },
+    {
+      "page": 15,
+      "content": "Thus, the average waiting time is (0 + 24 + 27)/3 = 17 milliseconds."
+    },
+    {
+      "page": 15,
+      "content": "If the processes arrive in the order P2, P3, P1, however, the results will be as shown in the following Gantt chart:"
+    },
+    {
+      "page": 15,
+      "content": "Thus, the average waiting time is (6 + 0 + 3)/3 = 3 milliseconds."
+    },
+    {
+      "page": 15,
+      "content": "This reduction is substantial. Thus, the average waiting time under an FCFS policy is generally not minimal and may vary"
+    },
+    {
+      "page": 15,
+      "content": "substantially if the processes’ CPU burs t times vary greatly."
+    },
+    {
+      "page": 15,
+      "content": "The FCFS Scheduling algorithm is Non -Preemptive"
+    },
+    {
+      "page": 15,
+      "content": "Example : find  the average waiting time using the FCFS scheduling algorithm."
+    },
+    {
+      "page": 18,
+      "content": "UNIT -2 OPE RATING SYSTEMS, DEPT.OF CSE, AC ET, SURAMPALEM"
+    },
+    {
+      "page": 18,
+      "content": "• If the  arrival time  for processes are different, which means all the processes are not  available in the ready queue"
+    },
+    {
+      "page": 18,
+      "content": "at time  0, and some jobs arrive after some time, in such situation, sometimes process with short burst time have"
+    },
+    {
+      "page": 18,
+      "content": "to wait for the current process's execution to finish, because in Non Pre -emptive SJF, on arrival of a process wi th"
+    },
+    {
+      "page": 18,
+      "content": "short duration, the existing job/process's execution is not halted/stopped to execute the short job first."
+    },
+    {
+      "page": 18,
+      "content": "Shortest Job First Scheduling (Preemptive)"
+    },
+    {
+      "page": 18,
+      "content": "1. In Preemptive Shortest Job First Scheduling, jobs are put into ready queue as they arrive, but as a process"
+    },
+    {
+      "page": 18,
+      "content": "with  short burst time  arrives, the existing process is preempted or removed from execution, and the shorter job is"
+    },
+    {
+      "page": 18,
+      "content": "2. The average waiting time for preemptive shortest job first scheduling is less than both,non preemptive SJF"
+    },
+    {
+      "page": 18,
+      "content": "3. The Pre -emptive SJF is also known as  Shortest Remaining Time First , because at any given point of time, the job"
+    },
+    {
+      "page": 18,
+      "content": "with the shortest remaining time is executed first."
+    },
+    {
+      "page": 18,
+      "content": "Consider the set of 5 processes whose arri val time and burst time are given below -"
+    },
+    {
+      "page": 18,
+      "content": "If the CPU scheduling policy is SJF preemptive, calculate the average waiting time and average turnaround  time ."
+    },
+    {
+      "page": 20,
+      "content": "UNIT -2 OPE RATING SYSTEMS, DEPT.OF CSE, AC ET, SURAMPALEM"
+    },
+    {
+      "page": 20,
+      "content": "Example:  Priority Scheduling (Non -Preemptive)"
+    },
+    {
+      "page": 20,
+      "content": "Consider the set of 5 processes whose arrival time and burst time are given below -"
+    },
+    {
+      "page": 20,
+      "content": "If the CPU scheduling policy is priority non -preemptive, calculate the average waiting time and average turnaround  time."
+    },
+    {
+      "page": 20,
+      "content": "(Higher number represents higher priority)"
+    },
+    {
+      "page": 20,
+      "content": "Using priority scheduling, we would schedule these processes according to the  following"
+    },
+    {
+      "page": 20,
+      "content": "Consider the below table for  processes with their respective CPU burst times and the"
+    },
+    {
+      "page": 16,
+      "content": "UNIT -2 OPE RATING SYSTEMS, DEPT.OF CSE, AC ET, SURAMPALEM"
+    },
+    {
+      "page": 16,
+      "content": "Average Turn Around time =  (5+11+3+13+8)/5"
+    },
+    {
+      "page": 16,
+      "content": "Average Waiting Time         =  (0+7+0+11+4)/5"
+    },
+    {
+      "page": 16,
+      "content": "1. FCFS algorithm is non -pre-emptive in nature, that is, once"
+    },
+    {
+      "page": 16,
+      "content": "CPU time has been allocated to a process, other processes"
+    },
+    {
+      "page": 16,
+      "content": "can get CPU time only after the current process has"
+    },
+    {
+      "page": 16,
+      "content": "finished. This property of FCFS scheduling leads to the"
+    },
+    {
+      "page": 16,
+      "content": "2. Convoy Effect is phenomenon associated with the First"
+    },
+    {
+      "page": 16,
+      "content": "Come First Serve (FCFS) algorithm, in which the whole"
+    },
+    {
+      "page": 16,
+      "content": "Operating System slows down due to few slow processes."
+    },
+    {
+      "page": 16,
+      "content": "3. Suppose there is one CPU intensive (large burst time)"
+    },
+    {
+      "page": 16,
+      "content": "process in the ready queue, and severa l other processes"
+    },
+    {
+      "page": 16,
+      "content": "with relatively less burst times but are Input/Output (I/O)"
+    },
+    {
+      "page": 16,
+      "content": "1. The I/O bound processes are first allocated CPU time. As they are less CPU intensive, they quickly get execu ted and goto"
+    },
+    {
+      "page": 16,
+      "content": "2. Now, the CPU intensive process is allocated CPU time. As its burst time is high, it takes time to complete."
+    },
+    {
+      "page": 16,
+      "content": "3. While the CPU intensive process is being executed, the I/O bound processes complete their I/O operations and are"
+    },
+    {
+      "page": 16,
+      "content": "4. However, the I/O bound processes are made to wait as the CPU intensive process still hasn’t finished.  This    leads to I/O"
+    },
+    {
+      "page": 16,
+      "content": "5. When the CPU intensive process gets over, it is sent to the I/O queue so that it can access an I/O device."
+    },
+    {
+      "page": 16,
+      "content": "6. Meanwhile, the I/O bound processes get their required CPU time and move back to I/O queue."
+    },
+    {
+      "page": 16,
+      "content": "7. However, they are made to wait because the CPU intensive process is still accessing an I/O device. As a result,  the CPU"
+    },
+    {
+      "page": 16,
+      "content": "Calculation of the average  waiting time and average Turnaround  time, if FCFS Scheduling Algorithm is"
+    },
+    {
+      "page": 16,
+      "content": "The shaded box represents the idle time of CPU"
+    },
+    {
+      "page": 16,
+      "content": "Turn Around Time = Completion Time – Arrival Time"
+    },
+    {
+      "page": 16,
+      "content": "Waiting Time = Turn Around Time – Burst Time"
+    }
+  ]
+}

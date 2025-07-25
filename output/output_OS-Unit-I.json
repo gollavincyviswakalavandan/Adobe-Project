@@ -1,0 +1,384 @@
+{
+  "metadata": {
+    "persona": "A data analyst with 5 years of experience in business intelligence.",
+    "job_to_be_done": "Looking for insights related to customer churn analysis.",
+    "processed_at": "2025-07-25T01:56:22.589777Z"
+  },
+  "extracted_sections": [
+    {
+      "page": 20,
+      "text": "UNIT -1 OPERATING SYSTEMS,  DEPT. OF CSE, ACET , SURAMPALEM  Page 20 \n • Debugging  is the activity of finding and fixing errors in a system, both in hardware and in software.  \n• Performance problems are considered bugs, so debugging can also include performance tuning.  \n• If a process fails, most operating systems write the error information to a log file to alert system \noperators or users that the problem occurred.  \n• The operating system can also  take a core dump —a capture of the memory of the process — and store it \nin a file for later analysis. (Memory was referred to as the “core” in the early days of computing.)  \n• Running programs and core dumps can be used by a debugger, which allows a programme r to explore the \ncode and memory of a process.  \n• A failure in the kernel is called a crash . When a crash occurs, error information is saved to a log file, and \nthe memory state is saved to a crash dump . \nPerformance Tuning  \n• Performance tuning seeks to improve performance by removing processing bottlenecks.  \n• To identify bottlenecks, we must be able to monitor system performance.  \n• In a number of systems, all interesting events are logged with their time and important parameters and \nare written to a file. Later, an analysis program can process the log file to determine system performance \nand to identify bottlenecks and inefficiencies.  \n• Another approach to performance tuning uses single -purpose, interactive tools that allow users and \nadministrators to question the stat e of various system components to look for bottlenecks.  \no The Windows Task Manager includes information for current applications as well as processes, \nCPU and memory usage, and networking statistics   Improve performance by removing \nbottlenecks  OS must provid e means of computing and displaying measures of system behavior \nFor example, “top” program or Windows Task Manager  \nDtrace - Dynamic Tracing   \n• DTrace (DTrace.exe) is a command -line tool that displays system information and events.  \n• DTrace  is an open source tracing platform ported to windows.  \n• DTrace was originally developed for the Solaris operating system.  \n• It provides dynamic instrumentation of both user/kernel functions, the ability to script using the D -\nlanguage, speculative tracing.  \n•  \n1.14  System Boot  \n• The procedure of starting a computer by loading the kernel is known as booting the system.  \n• On most computer systems, a small piece of code known as the bootstrap program or bootstrap loader \nlocates the kernel.  \n• This program is in the form o f read -only -memory(ROM),because the RAM is in an unknown state at \nsystem startup.ROM is convenient because it needs no initialization and cannot be infected by a computer \nvirus   \n• When the full bootstrap program has been loaded, it can traverse the file syst em to find the os kernel, \nload it into memory and start its execution. It is only at this point that the system is said to be Running",
+      "importance_rank": 0.2053203582763672
+    },
+    {
+      "page": 9,
+      "text": "UNIT -1 OPERATING SYSTEMS,  DEPT. OF CSE, ACET , SURAMPALEM  Page 9 \n – Means by which users can issue commands to the system. Depending on the system these may be \na  \n• Command -Line Interface  \n–  ( e.g. sh, csh, ksh, tcsh, etc. ),   \n•  GUI interface  \n–  ( e.g. Windows, X -Windows, KDE, Gnome, etc. ),  \n• The latter are generally older systems using punch cards of job -control language, JCL, but may still be \nused today for specialty systems designed for a single purpose.  \n• Batch operating system  \n• “The operating system is termed as “batch operating” because the input data (job) are collected into \nbatches or sets of records with similar needs and each batch is processed as a unit(group). The output is \nanother batch that can be reused for computation. ”  \n \n• Program Execution  - The OS must be able to load a program into RAM, run the program, and terminate the \nprogram, either normally or abnormally.  \n• I/O Operations  - The OS is responsible for transferring data to and from I/O devices, including keyboards, \nterminals, printers, and storage devices.  \n• Communications  - Inter -process communications, IPC, either between processes running on the same \nprocessor, or between processes running on separate processors or separate machines. May be \nimplemented as either shared memory or message passing, ( or some systems may offer  both)  \n• File-System Manipulation  - the OS is also responsible for maintaining directory and subdirectory \nstructures, mapping file names to specific blocks of data storage, and providing tools for navigating and \nutilizing the file system.  \n• Error Detection  - Both hardware and software errors must be detected and handled appropriately, with a \nminimum of harmful repercussions.  \n•  Some systems may include complex error avoidance or recovery systems, including backups, RAID \ndrives, and other redundant systems. Debugg ing and diagnostic tools aid users and administrators in \ntracing down the cause of problems.  \n• Other systems aid in the efficient operation of the OS itself:  \n• Resource Allocation  - E.g. CPU cycles, main memory, storage space, and peripheral devices. Some \nreso urces are managed with generic systems and others with very carefully designed and specially tuned \nsystems, customized for a particular resource and operating environment.  \n• Accounting  - Keeping track of system activity and resource usage, either for billing  purposes or for \nstatistical record keeping that can be used to optimize future performance.  \n• Protection and Security  - Preventing harm to the system and to resources, either through wayward \ninternal processes or malicious outsiders. Authentication, ownersh ip, and restricted access are obvious \nparts of this system. Highly secure systems may log all process activity down to excruciating detail, and \nsecurity regulation dictate the storage of those records on permanent non -erasable medium for extended \ntimes in secure ( off -site ) facilities.  \n \n1.7 User and Operating -System Interface  \n• The user interface  (UI) is the point of human -computer interaction and communication in a device.                         \n(OR)",
+      "importance_rank": 0.16134794056415558
+    },
+    {
+      "page": 15,
+      "text": "UNIT -1 OPERATING SYSTEMS,  DEPT. OF CSE, ACET , SURAMPALEM  Page 15 \n  \n \n1.10 System programs  \n An important aspect of a modern system is the collection of system programs  \n System programs provide a convenient environment for program development  and execution  \n• File management  - \n•  programs to create,  \n•  delete,  \n•  copy,  \n• rename,  \n• print,  \n• list, and generally  manipulate files and directories.  \n• Status information  - \n•  Utilities to check on the date,  \n•  time,  \n•  number of users,  \n• processes running,  \n• data logging, etc.  \n• System  registries  are used to store and recall configuration information for particular \napplications.  \n• File modification  - \n•  e.g. text editors and other tools which can change file contents.  \n• Programming -language support  - \n•  E.g. Compilers,  \n•  linkers,  \n• debuggers,  \n• profilers,  \n• assemblers,  \n•  library archive management,  \n•  interpreters for common languages, and supp ort for make.  \n• Background services  - System daemons are commonly started when the system is booted, and run for as \nlong as the system is running, handling necessary services.  \n• Examples include network daemons, print servers, process schedulers, and system e rror \nmonitoring services.",
+      "importance_rank": 0.148832306265831
+    },
+    {
+      "page": 12,
+      "text": "UNIT -1 OPERATING SYSTEMS,  DEPT. OF CSE, ACET , SURAMPALEM  Page 12 \n  \n• The use of APIs instead of direct system calls provides for greater program portability between different \nsystem s. The API then makes the appropriate system calls through the  system call interface , using a table \nlookup to access specific numbered system calls,   \n \nThe handling of a user application invoking the open( ) system call   \n• Parameters are generally passed to system calls via registers, or less commonly, by values pushed onto \nthe stack. Large blocks of data are generally accessed indirectly, through a memory address passed in a \nregister or on the stack",
+      "importance_rank": 0.13224002718925476
+    },
+    {
+      "page": 13,
+      "text": "UNIT -1 OPERATING SYSTEMS,  DEPT. OF CSE, ACET , SURAMPALEM  Page 13 \n  \nPassing of parameters as a table   \n \n \n1.9 Types of System Calls  \n• Six major categories,  \n– Process Control  \n– File Management  \n– Device Management  \n– Information Maintenance  \n– Communication  \n– Protection  \n• Process Control  \n– A running program needs to be able to stop execution either normally or abnormally. When \nexecution is stopped abnormally, often a dump of memory is taken and can be examined with a \ndebugger.  \n \n•  File Management  \n File management system calls include create f ile, delete file, open, close, read, write, reposition, get \nfile attributes, and set file attributes.  \n These operations may also be supported for directories as well as ordinary files.  \n \n• Device Management  \n Device management system calls include request devic e, release device, read, write, reposition, get/set \ndevice attributes, and logically attach or detach devices.",
+      "importance_rank": 0.12016142159700394
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "page": 20,
+      "content": "UNIT -1 OPERATING SYSTEMS,  DEPT. OF CSE, ACET , SURAMPALEM  Page 20"
+    },
+    {
+      "page": 20,
+      "content": "• Debugging  is the activity of finding and fixing errors in a system, both in hardware and in software."
+    },
+    {
+      "page": 20,
+      "content": "• Performance problems are considered bugs, so debugging can also include performance tuning."
+    },
+    {
+      "page": 20,
+      "content": "• If a process fails, most operating systems write the error information to a log file to alert system"
+    },
+    {
+      "page": 20,
+      "content": "operators or users that the problem occurred."
+    },
+    {
+      "page": 20,
+      "content": "• The operating system can also  take a core dump —a capture of the memory of the process — and store it"
+    },
+    {
+      "page": 20,
+      "content": "in a file for later analysis. (Memory was referred to as the “core” in the early days of computing.)"
+    },
+    {
+      "page": 20,
+      "content": "• Running programs and core dumps can be used by a debugger, which allows a programme r to explore the"
+    },
+    {
+      "page": 20,
+      "content": "• A failure in the kernel is called a crash . When a crash occurs, error information is saved to a log file, and"
+    },
+    {
+      "page": 20,
+      "content": "the memory state is saved to a crash dump ."
+    },
+    {
+      "page": 20,
+      "content": "• Performance tuning seeks to improve performance by removing processing bottlenecks."
+    },
+    {
+      "page": 20,
+      "content": "• To identify bottlenecks, we must be able to monitor system performance."
+    },
+    {
+      "page": 20,
+      "content": "• In a number of systems, all interesting events are logged with their time and important parameters and"
+    },
+    {
+      "page": 20,
+      "content": "are written to a file. Later, an analysis program can process the log file to determine system performance"
+    },
+    {
+      "page": 20,
+      "content": "and to identify bottlenecks and inefficiencies."
+    },
+    {
+      "page": 20,
+      "content": "• Another approach to performance tuning uses single -purpose, interactive tools that allow users and"
+    },
+    {
+      "page": 20,
+      "content": "administrators to question the stat e of various system components to look for bottlenecks."
+    },
+    {
+      "page": 20,
+      "content": "o The Windows Task Manager includes information for current applications as well as processes,"
+    },
+    {
+      "page": 20,
+      "content": "CPU and memory usage, and networking statistics   Improve performance by removing"
+    },
+    {
+      "page": 20,
+      "content": "bottlenecks  OS must provid e means of computing and displaying measures of system behavior"
+    },
+    {
+      "page": 20,
+      "content": "For example, “top” program or Windows Task Manager"
+    },
+    {
+      "page": 20,
+      "content": "• DTrace (DTrace.exe) is a command -line tool that displays system information and events."
+    },
+    {
+      "page": 20,
+      "content": "• DTrace  is an open source tracing platform ported to windows."
+    },
+    {
+      "page": 20,
+      "content": "• DTrace was originally developed for the Solaris operating system."
+    },
+    {
+      "page": 20,
+      "content": "• It provides dynamic instrumentation of both user/kernel functions, the ability to script using the D -"
+    },
+    {
+      "page": 20,
+      "content": "• The procedure of starting a computer by loading the kernel is known as booting the system."
+    },
+    {
+      "page": 20,
+      "content": "• On most computer systems, a small piece of code known as the bootstrap program or bootstrap loader"
+    },
+    {
+      "page": 20,
+      "content": "• This program is in the form o f read -only -memory(ROM),because the RAM is in an unknown state at"
+    },
+    {
+      "page": 20,
+      "content": "system startup.ROM is convenient because it needs no initialization and cannot be infected by a computer"
+    },
+    {
+      "page": 20,
+      "content": "• When the full bootstrap program has been loaded, it can traverse the file syst em to find the os kernel,"
+    },
+    {
+      "page": 20,
+      "content": "load it into memory and start its execution. It is only at this point that the system is said to be Running"
+    },
+    {
+      "page": 9,
+      "content": "UNIT -1 OPERATING SYSTEMS,  DEPT. OF CSE, ACET , SURAMPALEM  Page 9"
+    },
+    {
+      "page": 9,
+      "content": "– Means by which users can issue commands to the system. Depending on the system these may be"
+    },
+    {
+      "page": 9,
+      "content": "–  ( e.g. Windows, X -Windows, KDE, Gnome, etc. ),"
+    },
+    {
+      "page": 9,
+      "content": "• The latter are generally older systems using punch cards of job -control language, JCL, but may still be"
+    },
+    {
+      "page": 9,
+      "content": "used today for specialty systems designed for a single purpose."
+    },
+    {
+      "page": 9,
+      "content": "• “The operating system is termed as “batch operating” because the input data (job) are collected into"
+    },
+    {
+      "page": 9,
+      "content": "batches or sets of records with similar needs and each batch is processed as a unit(group). The output is"
+    },
+    {
+      "page": 9,
+      "content": "another batch that can be reused for computation. ”"
+    },
+    {
+      "page": 9,
+      "content": "• Program Execution  - The OS must be able to load a program into RAM, run the program, and terminate the"
+    },
+    {
+      "page": 9,
+      "content": "• I/O Operations  - The OS is responsible for transferring data to and from I/O devices, including keyboards,"
+    },
+    {
+      "page": 9,
+      "content": "terminals, printers, and storage devices."
+    },
+    {
+      "page": 9,
+      "content": "• Communications  - Inter -process communications, IPC, either between processes running on the same"
+    },
+    {
+      "page": 9,
+      "content": "processor, or between processes running on separate processors or separate machines. May be"
+    },
+    {
+      "page": 9,
+      "content": "implemented as either shared memory or message passing, ( or some systems may offer  both)"
+    },
+    {
+      "page": 9,
+      "content": "• File-System Manipulation  - the OS is also responsible for maintaining directory and subdirectory"
+    },
+    {
+      "page": 9,
+      "content": "structures, mapping file names to specific blocks of data storage, and providing tools for navigating and"
+    },
+    {
+      "page": 9,
+      "content": "• Error Detection  - Both hardware and software errors must be detected and handled appropriately, with a"
+    },
+    {
+      "page": 9,
+      "content": "•  Some systems may include complex error avoidance or recovery systems, including backups, RAID"
+    },
+    {
+      "page": 9,
+      "content": "drives, and other redundant systems. Debugg ing and diagnostic tools aid users and administrators in"
+    },
+    {
+      "page": 9,
+      "content": "• Other systems aid in the efficient operation of the OS itself:"
+    },
+    {
+      "page": 9,
+      "content": "• Resource Allocation  - E.g. CPU cycles, main memory, storage space, and peripheral devices. Some"
+    },
+    {
+      "page": 9,
+      "content": "reso urces are managed with generic systems and others with very carefully designed and specially tuned"
+    },
+    {
+      "page": 9,
+      "content": "systems, customized for a particular resource and operating environment."
+    },
+    {
+      "page": 9,
+      "content": "• Accounting  - Keeping track of system activity and resource usage, either for billing  purposes or for"
+    },
+    {
+      "page": 9,
+      "content": "statistical record keeping that can be used to optimize future performance."
+    },
+    {
+      "page": 9,
+      "content": "• Protection and Security  - Preventing harm to the system and to resources, either through wayward"
+    },
+    {
+      "page": 9,
+      "content": "internal processes or malicious outsiders. Authentication, ownersh ip, and restricted access are obvious"
+    },
+    {
+      "page": 9,
+      "content": "parts of this system. Highly secure systems may log all process activity down to excruciating detail, and"
+    },
+    {
+      "page": 9,
+      "content": "security regulation dictate the storage of those records on permanent non -erasable medium for extended"
+    },
+    {
+      "page": 9,
+      "content": "times in secure ( off -site ) facilities."
+    },
+    {
+      "page": 9,
+      "content": "• The user interface  (UI) is the point of human -computer interaction and communication in a device."
+    },
+    {
+      "page": 15,
+      "content": "UNIT -1 OPERATING SYSTEMS,  DEPT. OF CSE, ACET , SURAMPALEM  Page 15"
+    },
+    {
+      "page": 15,
+      "content": " An important aspect of a modern system is the collection of system programs"
+    },
+    {
+      "page": 15,
+      "content": " System programs provide a convenient environment for program development  and execution"
+    },
+    {
+      "page": 15,
+      "content": "• list, and generally  manipulate files and directories."
+    },
+    {
+      "page": 15,
+      "content": "• System  registries  are used to store and recall configuration information for particular"
+    },
+    {
+      "page": 15,
+      "content": "•  e.g. text editors and other tools which can change file contents."
+    },
+    {
+      "page": 15,
+      "content": "•  interpreters for common languages, and supp ort for make."
+    },
+    {
+      "page": 15,
+      "content": "• Background services  - System daemons are commonly started when the system is booted, and run for as"
+    },
+    {
+      "page": 15,
+      "content": "long as the system is running, handling necessary services."
+    },
+    {
+      "page": 15,
+      "content": "• Examples include network daemons, print servers, process schedulers, and system e rror"
+    },
+    {
+      "page": 12,
+      "content": "UNIT -1 OPERATING SYSTEMS,  DEPT. OF CSE, ACET , SURAMPALEM  Page 12"
+    },
+    {
+      "page": 12,
+      "content": "• The use of APIs instead of direct system calls provides for greater program portability between different"
+    },
+    {
+      "page": 12,
+      "content": "system s. The API then makes the appropriate system calls through the  system call interface , using a table"
+    },
+    {
+      "page": 12,
+      "content": "lookup to access specific numbered system calls,"
+    },
+    {
+      "page": 12,
+      "content": "The handling of a user application invoking the open( ) system call"
+    },
+    {
+      "page": 12,
+      "content": "• Parameters are generally passed to system calls via registers, or less commonly, by values pushed onto"
+    },
+    {
+      "page": 12,
+      "content": "the stack. Large blocks of data are generally accessed indirectly, through a memory address passed in a"
+    },
+    {
+      "page": 13,
+      "content": "UNIT -1 OPERATING SYSTEMS,  DEPT. OF CSE, ACET , SURAMPALEM  Page 13"
+    },
+    {
+      "page": 13,
+      "content": "– A running program needs to be able to stop execution either normally or abnormally. When"
+    },
+    {
+      "page": 13,
+      "content": "execution is stopped abnormally, often a dump of memory is taken and can be examined with a"
+    },
+    {
+      "page": 13,
+      "content": " File management system calls include create f ile, delete file, open, close, read, write, reposition, get"
+    },
+    {
+      "page": 13,
+      "content": "file attributes, and set file attributes."
+    },
+    {
+      "page": 13,
+      "content": " These operations may also be supported for directories as well as ordinary files."
+    },
+    {
+      "page": 13,
+      "content": " Device management system calls include request devic e, release device, read, write, reposition, get/set"
+    },
+    {
+      "page": 13,
+      "content": "device attributes, and logically attach or detach devices."
+    }
+  ]
+}
